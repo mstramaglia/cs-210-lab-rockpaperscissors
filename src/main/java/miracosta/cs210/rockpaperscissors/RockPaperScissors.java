@@ -25,12 +25,12 @@ public class RockPaperScissors {
     private String winner;
 
     public static void play(String playerMove) {
-        String requestURL = "https://games.mstramaglia.repl.co/quickplay/rockpaperscissors/" + playerMove;
-        HttpResponse<String> response = invokeGET(requestURL);
-        System.out.println(response.body());
+        String requestURL = "";
+        //HttpResponse<String> response = invokeGET(requestURL);
+        //System.out.println(response.body());
 
-        JSONObject obj = new JSONObject(response.body());
-        System.out.println(obj.get("winner"));
+        //JSONObject obj = new JSONObject(response.body());
+        //System.out.println(obj.get("winner"));
     }
 
     /**

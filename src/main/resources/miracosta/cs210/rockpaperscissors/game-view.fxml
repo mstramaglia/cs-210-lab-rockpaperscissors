@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="350.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miracosta.cs210.rockpaperscissors.GameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label text="Rock Paper Scissors">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <Button fx:id="rockButton" onAction="#onRockButtonClick" text="Rock">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </Button>
+            <Button fx:id="paperButton" layoutX="110.0" layoutY="37.0" onAction="#onPaperButtonClick" text="Paper">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </Button>
+            <Button fx:id="scissorsButton" layoutX="129.0" layoutY="37.0" onAction="#onScissorsButtonClick" text="Scissors">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </Button>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <Label prefWidth="100.0" text="Player Move" textAlignment="RIGHT" />
+            <TextField fx:id="playerMove" editable="false">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </TextField>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <Label prefWidth="100.0" text="Computer Move" />
+            <TextField fx:id="computerMove" alignment="CENTER" editable="false">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </TextField>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <Label prefWidth="100.0" text="Winner" />
+            <TextField fx:id="winner" alignment="CENTER" editable="false">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </TextField>
+        </children>
+    </HBox>
+</VBox>

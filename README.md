@@ -8,10 +8,10 @@ This is a partially completed JavaFX program for a Rock, Paper, Scissors game.  
 There is a `RockPaperScissors.java` class file which we want to use to connect to an API for simulating Rock, Paper, Scissors games.  The URL for the API is:
 
 ```
-https://games.mstramaglia.repl.co/quickplay/rockpaperscissors/<move>
+https://cs210-rock-paper-scissors.replit.app/play?choice=rock
 ```
 
-Where `<move>` can be one of the following three valid options:
+Where the choice can be one of the following three valid options:
 * `rock`
 * `paper`
 * `scissors`
@@ -20,9 +20,9 @@ Performing a `GET` against that URL should cause the API to generate a move for 
 
 ```
 {
-    "computer_move": "rock",
-    "player_move": "paper",
-    "winner": "player"
+    "computer_choice": "rock",
+    "player_choice": "paper",
+    "winner": "Player wins!"
 }
 ```
 

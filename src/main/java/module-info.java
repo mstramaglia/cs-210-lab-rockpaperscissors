@@ -1,10 +1,8 @@
-module miracosta.cs210.rockpaperscissors {
+module edu.miracosta.cs210.rockpaperscissorslab {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.net.http;
-    requires json;
+    requires org.json;
 
-
-    opens miracosta.cs210.rockpaperscissors to javafx.fxml;
-    exports miracosta.cs210.rockpaperscissors;
+    exports edu.miracosta.cs210.rockpaperscissorslab;
+    opens edu.miracosta.cs210.rockpaperscissorslab to javafx.fxml;
 }
